@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/5.3.3/materia/bootstrap.rtl.min.css" integrity="sha512-gKDEIPM2feBD3raqbhlzCmBAwxUV/xgsX+znn3/0m6hRfVXMy0jAJ4pB0dD7LVpwDRIxYPhS+hP/gQRZdHGbrA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+</head>
+<body>
+
+    <h1>Envío de formulario</h1>
+    <div class="card" style="width: 18rem;">
+        <div class="card-body">
+            <form id="formulario">
+
+                <div class="campo-email">
+                    <label for= "email" form-label">Correo</label>
+                    <input type="email" class="form-control" id="email" placeholder="Email destino: gera@siiksolutions.com">
+                    <div id="alertMail"></div>
+
+                </div>
+
+                <div >
+                    <label class="form-label mt-4">CC (opcional)</label>
+                    <input  id="cc" type="email" class="form-control" id="cc" placeholder="Email destino: gera@siiksolutions.com">
+                </div>
+
+                <div>
+                    <label for= "asunto"  class="form-label mt-4">Asunto</label>
+                    <input id="asunto" type="text" class="form-control" id="asunto" placeholder="Escribe el asunto">
+                    <div id="alertAsunto"></div>
+                </div>
+                
+                <div>
+                    <label for="mensaje" class="mt-4">Mensaje</label>
+                    <textarea  id="mensaje"  class="form-control" placeholder="Leave deja un comentario" id="floatingTextarea2" style="height: 100px"></textarea>
+                    <div id="alertMensaje"></div>
+                </div>
+                
+                <button type="submit" class="btn btn-primary mt-4">Enviar</button>
+                <button type="reset" class="btn btn-dark mt-4">Resetear</button>
+            </form>
+      </div>
+    
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script src="./assets/js/app.js"></script>
+</body>
+</html>
